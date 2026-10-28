@@ -1,13 +1,232 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>261027</title>
+    <meta name="description" content="안녕하세요, 저를 소개합니다." />
+    <title>Your Name — About Me</title>
   </head>
   <body>
-    <div id="app"></div>
+    <!-- ========== Header ========== -->
+    <header class="site-header">
+      <a href="#top" class="logo" aria-label="맨 위로">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Your Name</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">About</a>
+        <a href="#loves">Loves</a>
+        <a href="#journey">Journey</a>
+        <a href="#works">Works</a>
+        <a href="#contact" class="nav-cta">Say hello</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- ========== Hero ========== -->
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Est. 19XX &nbsp;·&nbsp; Seoul, Korea</p>
+          <h1 class="hero-title">
+            Hello,<br />
+            I'm <em>Your Name.</em>
+          </h1>
+          <p class="hero-lead">
+            여기에 나를 한 문장으로 소개해 주세요.<br />
+            무엇을 좋아하고, 어떤 일을 하는 사람인지.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">More about me</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 400" class="composition">
+            <circle cx="210" cy="200" r="150" class="c-mustard" />
+            <path d="M60 200a150 150 0 0 1 300 0z" class="c-teal shape-tilt" />
+            <circle cx="300" cy="110" r="46" class="c-orange shape-float" />
+            <path d="M90 300c40-70 130-90 200-40-60-10-120 10-200 40z" class="c-ink" />
+            <rect x="150" y="250" width="120" height="16" rx="8" class="c-cream" />
+            <g class="starburst" transform="translate(100 110)">
+              <line x1="-34" y1="0" x2="34" y2="0" />
+              <line x1="0" y1="-34" x2="0" y2="34" />
+              <line x1="-24" y1="-24" x2="24" y2="24" />
+              <line x1="-24" y1="24" x2="24" y2="-24" />
+              <circle r="6" />
+            </g>
+            <g class="dots c-olive">
+              <circle cx="320" cy="300" r="7" />
+              <circle cx="345" cy="300" r="7" />
+              <circle cx="370" cy="300" r="7" />
+              <circle cx="320" cy="325" r="7" />
+              <circle cx="345" cy="325" r="7" />
+              <circle cx="370" cy="325" r="7" />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ========== Ticker ========== -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Curious</span><i>✦</i><span>Thoughtful</span><i>✦</i><span>Creative</span><i>✦</i><span>Warm</span><i>✦</i>
+          <span>Curious</span><i>✦</i><span>Thoughtful</span><i>✦</i><span>Creative</span><i>✦</i><span>Warm</span><i>✦</i>
+        </div>
+      </div>
+
+      <!-- ========== About ========== -->
+      <section id="about" class="section about">
+        <div class="section-label"><span>01</span> About</div>
+
+        <div class="about-grid">
+          <figure class="portrait reveal">
+            <div class="portrait-frame">
+              <!-- 사진을 넣으려면 아래 주석을 해제하고 public 폴더에 이미지를 넣어 주세요 -->
+              <!-- <img src="/profile.jpg" alt="내 사진" /> -->
+              <span class="portrait-placeholder">Your<br />Photo</span>
+            </div>
+            <figcaption>— Me, somewhere nice.</figcaption>
+          </figure>
+
+          <div class="about-body reveal">
+            <h2 class="section-title">A little bit <em>about me</em></h2>
+            <p>
+              여기에 자기소개를 적어 주세요. 어떤 길을 걸어왔는지, 요즘 무엇에 마음을 쓰고 있는지,
+              앞으로 어떤 사람이 되고 싶은지 편하게 써 내려가면 됩니다.
+            </p>
+            <p>
+              두 번째 문단도 좋아요. 일하는 방식, 소중히 여기는 가치, 사소하지만 나다운 습관 같은 것들.
+            </p>
+
+            <dl class="facts">
+              <div><dt>Based in</dt><dd>Seoul</dd></div>
+              <div><dt>Occupation</dt><dd>Your Job</dd></div>
+              <div><dt>Favorite</dt><dd>Coffee &amp; Jazz</dd></div>
+              <div><dt>Currently</dt><dd>Learning something</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Loves ========== -->
+      <section id="loves" class="section loves">
+        <div class="section-label"><span>02</span> Things I love</div>
+        <h2 class="section-title">Small joys, <em>big influence</em></h2>
+
+        <ul class="cards">
+          <li class="card card-mustard reveal">
+            <span class="card-shape shape-circle" aria-hidden="true"></span>
+            <h3>Design</h3>
+            <p>좋아하는 것 하나와 그 이유를 짧게 적어 주세요.</p>
+          </li>
+          <li class="card card-teal reveal">
+            <span class="card-shape shape-half" aria-hidden="true"></span>
+            <h3>Music</h3>
+            <p>좋아하는 것 하나와 그 이유를 짧게 적어 주세요.</p>
+          </li>
+          <li class="card card-orange reveal">
+            <span class="card-shape shape-triangle" aria-hidden="true"></span>
+            <h3>Travel</h3>
+            <p>좋아하는 것 하나와 그 이유를 짧게 적어 주세요.</p>
+          </li>
+          <li class="card card-olive reveal">
+            <span class="card-shape shape-pill" aria-hidden="true"></span>
+            <h3>Reading</h3>
+            <p>좋아하는 것 하나와 그 이유를 짧게 적어 주세요.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ========== Journey ========== -->
+      <section id="journey" class="section journey">
+        <div class="section-label"><span>03</span> Journey</div>
+        <h2 class="section-title">The road <em>so far</em></h2>
+
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="year">2026</span>
+            <div>
+              <h3>지금 하고 있는 일</h3>
+              <p>현재의 역할이나 프로젝트를 간단히 설명해 주세요.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="year">2023</span>
+            <div>
+              <h3>의미 있었던 경험</h3>
+              <p>나를 바꾼 경험이나 이정표를 적어 주세요.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="year">2020</span>
+            <div>
+              <h3>시작</h3>
+              <p>이 길을 걷게 된 계기를 적어 주세요.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ========== Works ========== -->
+      <section id="works" class="section works">
+        <div class="section-label"><span>04</span> Selected works</div>
+        <h2 class="section-title">Things I've <em>made</em></h2>
+
+        <div class="work-grid">
+          <article class="work reveal">
+            <div class="work-thumb thumb-a" aria-hidden="true"></div>
+            <div class="work-meta">
+              <span>2026 · Category</span>
+              <h3>Project One</h3>
+              <p>프로젝트에 대한 한두 줄 설명.</p>
+            </div>
+          </article>
+          <article class="work reveal">
+            <div class="work-thumb thumb-b" aria-hidden="true"></div>
+            <div class="work-meta">
+              <span>2025 · Category</span>
+              <h3>Project Two</h3>
+              <p>프로젝트에 대한 한두 줄 설명.</p>
+            </div>
+          </article>
+          <article class="work reveal">
+            <div class="work-thumb thumb-c" aria-hidden="true"></div>
+            <div class="work-meta">
+              <span>2024 · Category</span>
+              <h3>Project Three</h3>
+              <p>프로젝트에 대한 한두 줄 설명.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== Contact ========== -->
+      <section id="contact" class="section contact">
+        <div class="contact-inner reveal">
+          <p class="eyebrow">05 &nbsp;·&nbsp; Contact</p>
+          <h2 class="contact-title">Let's have<br /><em>a cup of coffee.</em></h2>
+          <a href="mailto:hello@example.com" class="contact-mail">hello@example.com</a>
+          <ul class="socials">
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Your Name. Made with care.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
